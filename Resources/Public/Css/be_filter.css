@@ -1,0 +1,207 @@
+.be-filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: 1rem;
+    padding: .75rem;
+    border: 1px solid var(--typo3-component-border-color, rgba(0, 0, 0, .15));
+    border-radius: var(--typo3-component-border-radius, 4px);
+    background-color: var(--typo3-component-bg, #fff);
+}
+
+.be-filter-controls,
+.be-filter-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+}
+
+/* However many filters there are, the buttons keep their own row below them. */
+.be-filter-actions {
+    padding-top: .75rem;
+    border-top: 1px solid var(--typo3-component-border-color, rgba(0, 0, 0, .15));
+}
+
+.be-filter-actions-end {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+    margin-inline-start: auto;
+}
+
+.be-filter-bar:not(:has(.be-filter-controls > *)) .be-filter-actions {
+    padding-top: 0;
+    border-top: 0;
+}
+
+/* Controls size to their content, Bootstrap would stretch an input group. */
+.be-filter-control.input-group {
+    width: auto;
+}
+
+.be-filter-control .form-select {
+    width: auto;
+    min-width: 7rem;
+}
+
+.be-filter-control-value {
+    font-weight: 600;
+}
+
+.be-filter-control-value::before {
+    content: ": ";
+    font-weight: 400;
+}
+
+/* The backend pads a dropdown with 2px and lets every item carry its own padding. These
+   menus hold forms, so the menu is padded itself. Both classes, because backend.css is
+   loaded after this file and .dropdown-menu would otherwise win on order. */
+.dropdown-menu.be-filter-menu {
+    min-width: 22rem;
+    max-width: 26rem;
+    padding: var(--typo3-list-item-padding-y, .5rem) var(--typo3-list-item-padding-x, .75rem);
+}
+
+.be-filter-menu-search {
+    margin-bottom: var(--typo3-list-item-padding-y, .5rem);
+}
+
+.be-filter-menu-info {
+    padding: var(--typo3-list-item-padding-y, .5rem) var(--typo3-list-item-padding-x, .75rem);
+    opacity: .65;
+}
+
+/* What the list is hiding is not one of the options: it is set off like a divider of the
+   backend, so it does not read as an entry of its own. */
+.be-filter-options + .be-filter-menu-info {
+    margin-top: var(--typo3-dropdown-divider-margin-y, .5rem);
+    border-top: 1px solid var(--typo3-dropdown-divider-bg, var(--typo3-component-border-color, rgba(0, 0, 0, .15)));
+    padding-top: calc(var(--typo3-list-item-padding-y, .5rem) * 1.5);
+}
+
+.be-filter-menu-footer {
+    margin-top: .5rem;
+    padding-top: .5rem;
+    border-top: 1px solid var(--typo3-component-border-color, rgba(0, 0, 0, .15));
+}
+
+.be-filter-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 16rem;
+    overflow-y: auto;
+}
+
+/* The size of the box comes from "form-check-type-toggle", the wrapper the record list
+   puts around the checkbox in front of a row. Only the correction is ours, because the
+   row centres what it holds. Both classes, because backend.css is loaded after this file
+   and .form-check would otherwise win on order. */
+.be-filter-option.form-check {
+    --typo3-form-check-top-correction: 0;
+    display: flex;
+    gap: var(--typo3-form-check-space, .5em);
+    align-items: center;
+    min-height: 2rem;
+    margin: 0;
+    padding: var(--typo3-list-item-padding-y, .5rem) var(--typo3-list-item-padding-x, .75rem);
+    border-radius: var(--typo3-component-border-radius, 4px);
+    cursor: pointer;
+}
+
+/* Hover and selected are the states of an item in a dropdown of the backend, the same the
+   record list gives a row whose checkbox is checked. The selector stays ":has(:checked)"
+   rather than the class "active": the core makes .dropdown-item.active unclickable, and an
+   option has to stay clickable to be switched off again. */
+.be-filter-option.form-check:hover {
+    background-color: var(--typo3-dropdown-item-hover-bg, var(--typo3-list-item-hover-bg));
+    color: var(--typo3-dropdown-item-hover-color, var(--typo3-list-item-hover-color));
+    outline: 1px solid var(--typo3-dropdown-item-hover-border-color, transparent);
+}
+
+.be-filter-option.form-check:has(input:checked) {
+    background-color: var(--typo3-dropdown-item-active-bg, var(--typo3-list-item-active-bg));
+    color: var(--typo3-dropdown-item-active-color, var(--typo3-list-item-active-color));
+    outline: 1px solid var(--typo3-dropdown-item-active-border-color, transparent);
+}
+
+.be-filter-preset {
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+}
+
+.be-filter-preset-apply {
+    flex: 1 1 auto;
+    text-align: start;
+    text-decoration: none;
+}
+
+/* Quick ranges in an even grid, the range below them, separated by a line. */
+.be-filter-dates {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .375rem;
+    margin-bottom: .75rem;
+}
+
+/* An even grid for the controls of other extensions. */
+.be-filter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .375rem;
+}
+
+/* One row per boundary: a caption of any length leaves the inputs their width. */
+.be-filter-range {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    padding-top: .75rem;
+    border-top: 1px solid var(--typo3-component-border-color, rgba(0, 0, 0, .15));
+}
+
+.be-filter-range label {
+    display: grid;
+    grid-template-columns: minmax(0, var(--be-filter-caption-width, 7rem)) 1fr;
+    gap: .75rem;
+    align-items: center;
+}
+
+/* A slider carries its caption above the track, so every track is the same length
+   however long the caption is. */
+.be-filter-slider {
+    display: flex;
+    flex-direction: column;
+    gap: .875rem;
+    padding-block: var(--typo3-list-item-padding-y, .5rem);
+}
+
+.be-filter-slider label {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "caption caption"
+        "track value";
+    gap: .25rem .75rem;
+    align-items: center;
+}
+
+.be-filter-slider-caption {
+    grid-area: caption;
+}
+
+.be-filter-slider input[type="range"] {
+    grid-area: track;
+    width: 100%;
+    min-width: 0;
+}
+
+.be-filter-slider output {
+    grid-area: value;
+    min-width: 4rem;
+    text-align: end;
+    font-variant-numeric: tabular-nums;
+}

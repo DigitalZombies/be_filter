@@ -1,0 +1,18 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  _instanceof:
+    DigitalZombies\BeFilter\Filter\Type\FilterTypeInterface:
+      tags: ['be_filter.filter_type']
+
+  DigitalZombies\BeFilter\:
+    resource: '../Classes/*'
+
+  DigitalZombies\BeFilter\Query\ReachableValueLookup: '@DigitalZombies\BeFilter\Query\OptionProvider'
+
+  DigitalZombies\BeFilter\Filter\FilterTypeRegistry:
+    arguments:
+      $types: !tagged_iterator be_filter.filter_type

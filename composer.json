@@ -1,0 +1,22 @@
+{
+    "name": "digitalzombies/be_filter",
+    "type": "typo3-cms-extension",
+    "description": "TCA defined filters, saved filter presets and drag and drop column configuration for the TYPO3 record list",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^8.2",
+        "typo3/cms-backend": "^14.3",
+        "typo3/cms-core": "^14.3",
+        "psr/event-dispatcher": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigitalZombies\\BeFilter\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "be_filter"
+        }
+    }
+}

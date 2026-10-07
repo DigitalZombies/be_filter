@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:be_filter/Resources/Private/Language/locallang.xlf" date="2026-09-12T00:00:00Z" product-name="be_filter">
+		<header/>
+		<body>
+			<trans-unit id="apply">
+				<source>Apply</source>
+			</trans-unit>
+			<trans-unit id="reset">
+				<source>Reset</source>
+			</trans-unit>
+			<trans-unit id="search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="loading">
+				<source>Loading…</source>
+			</trans-unit>
+			<trans-unit id="noResults">
+				<source>No results</source>
+			</trans-unit>
+			<trans-unit id="clear">
+				<source>Clear</source>
+			</trans-unit>
+			<trans-unit id="selected">
+				<source>%d selected</source>
+			</trans-unit>
+			<trans-unit id="any">
+				<source>Any</source>
+			</trans-unit>
+			<trans-unit id="yes">
+				<source>Yes</source>
+			</trans-unit>
+			<trans-unit id="no">
+				<source>No</source>
+			</trans-unit>
+			<trans-unit id="from">
+				<source>From</source>
+			</trans-unit>
+			<trans-unit id="to">
+				<source>To</source>
+			</trans-unit>
+			<trans-unit id="preset.week">
+				<source>1 week</source>
+			</trans-unit>
+			<trans-unit id="preset.month">
+				<source>1 month</source>
+			</trans-unit>
+			<trans-unit id="preset.lastMonth">
+				<source>Last month</source>
+			</trans-unit>
+			<trans-unit id="preset.thisMonth">
+				<source>This month</source>
+			</trans-unit>
+			<trans-unit id="preset.lastYear">
+				<source>Last year</source>
+			</trans-unit>
+			<trans-unit id="preset.thisYear">
+				<source>This year</source>
+			</trans-unit>
+			<trans-unit id="filters">
+				<source>Filters</source>
+			</trans-unit>
+			<trans-unit id="filters.title">
+				<source>Displayed filters</source>
+			</trans-unit>
+			<trans-unit id="filters.empty">
+				<source>No filters displayed</source>
+			</trans-unit>
+			<trans-unit id="transfer.available">
+				<source>Available</source>
+			</trans-unit>
+			<trans-unit id="transfer.displayed">
+				<source>Displayed</source>
+			</trans-unit>
+			<trans-unit id="transfer.empty">
+				<source>Drag entries here</source>
+			</trans-unit>
+			<trans-unit id="columns">
+				<source>Columns</source>
+			</trans-unit>
+			<trans-unit id="columns.title">
+				<source>Displayed columns</source>
+			</trans-unit>
+			<trans-unit id="presets">
+				<source>Saved filters</source>
+			</trans-unit>
+			<trans-unit id="preset">
+				<source>Saved filter</source>
+			</trans-unit>
+			<trans-unit id="preset.table">
+				<source>Table</source>
+			</trans-unit>
+			<trans-unit id="preset.values">
+				<source>Filter values</source>
+			</trans-unit>
+			<trans-unit id="preset.visibleFilters">
+				<source>Displayed filters</source>
+			</trans-unit>
+			<trans-unit id="presets.open">
+				<source>Open a saved filter</source>
+			</trans-unit>
+			<trans-unit id="presets.saveTitle">
+				<source>Save filter</source>
+			</trans-unit>
+			<trans-unit id="presets.owner">
+				<source>Created by</source>
+			</trans-unit>
+			<trans-unit id="presets.created">
+				<source>Created</source>
+			</trans-unit>
+			<trans-unit id="presets.me">
+				<source>Me</source>
+			</trans-unit>
+			<trans-unit id="presets.search">
+				<source>Search by name, creator or date</source>
+			</trans-unit>
+			<trans-unit id="presets.noMatch">
+				<source>No saved filter matches</source>
+			</trans-unit>
+			<trans-unit id="presets.visibility">
+				<source>Visible for</source>
+			</trans-unit>
+			<trans-unit id="presets.groups">
+				<source>Backend groups</source>
+			</trans-unit>
+			<trans-unit id="presets.contents">
+				<source>Saved with the current filter values and the displayed filters.</source>
+			</trans-unit>
+			<trans-unit id="presets.overwriteHint">
+				<source>A saved filter of yours with the same name is replaced.</source>
+			</trans-unit>
+			<trans-unit id="visibility.private">
+				<source>Only me</source>
+			</trans-unit>
+			<trans-unit id="visibility.groups">
+				<source>Selected backend groups</source>
+			</trans-unit>
+			<trans-unit id="visibility.public">
+				<source>Everyone</source>
+			</trans-unit>
+			<trans-unit id="presets.groupsEmpty">
+				<source>You are not a member of any backend group</source>
+			</trans-unit>
+			<trans-unit id="presets.empty">
+				<source>No saved filters</source>
+			</trans-unit>
+			<trans-unit id="presets.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="presets.save">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="presets.delete">
+				<source>Delete saved filter</source>
+			</trans-unit>
+			<trans-unit id="button.save">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="button.cancel">
+				<source>Cancel</source>
+			</trans-unit>
+			<trans-unit id="options.truncated">
+				<source>%1 of %2 shown, search to narrow them down</source>
+			</trans-unit>
+			<trans-unit id="presets.adjusted">
+				<source>Not everything in this filter is available to you</source>
+			</trans-unit>
+			<trans-unit id="presets.openButton">
+				<source>Open</source>
+			</trans-unit>
+			<trans-unit id="presets.saveButton">
+				<source>Save</source>
+			</trans-unit>
+			<trans-unit id="filters.none">
+				<source>This table has no filters</source>
+			</trans-unit>
+			<trans-unit id="wizard.save.name.headline">
+				<source>Name this filter</source>
+			</trans-unit>
+			<trans-unit id="wizard.save.share.headline">
+				<source>Who can use this filter</source>
+			</trans-unit>
+			<trans-unit id="wizard.save.success.title">
+				<source>Filter saved</source>
+			</trans-unit>
+			<trans-unit id="wizard.save.success.description">
+				<source>The filter is available under its name.</source>
+			</trans-unit>
+			<trans-unit id="wizard.open.headline">
+				<source>Choose a saved filter</source>
+			</trans-unit>
+			<trans-unit id="wizard.open.success.title">
+				<source>Filter applied</source>
+			</trans-unit>
+			<trans-unit id="wizard.open.success.description">
+				<source>The list shows the saved filter.</source>
+			</trans-unit>
+			<trans-unit id="presets.saveInstead">
+				<source>Save the current filter instead</source>
+			</trans-unit>
+			<trans-unit id="presets.groups">
+				<source>Backend groups</source>
+			</trans-unit>
+			<trans-unit id="error">
+				<source>The change could not be saved.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

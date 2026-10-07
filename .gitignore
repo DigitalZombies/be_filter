@@ -1,0 +1,13 @@
+# Composer, when the extension is installed on its own
+/vendor/
+/composer.lock
+
+# Tests and tooling
+/.phpunit.cache/
+/phpunit.xml
+.php-cs-fixer.cache
+node_modules/
+
+.idea/
+.vscode/
+.DS_Store
